@@ -1,6 +1,6 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=7AD7F0&height=120&section=header" alt="header"/> 
-<h1 align="center">Heyy, I'm Saurav Shrestha</h1>
-<h3 align="center">Student|Web Developer|Rookie Coder</h3>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00B4D8&height=120&section=header" alt="header"/> 
+<h1 align="center">Heyy, I'm Saurav Shrestha ✌️</h1>
+<h3 align="center">Student | Web Developer | Rookie Coder</h3>
 
 - 🔭 I’m currently working on [Pixel Fighter 2d](https://github.com/Sharior13/pixel-fighter-2d)
 
@@ -24,5 +24,6 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sharior13&show_icons=true&locale=en" alt="sharior13" /></p>
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=7AD7F0&height=120&section=footer" alt="footer"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00B4D8&height=120&section=footer" alt="footer"/>
+
 
