@@ -4,7 +4,7 @@
 
 - 🔭 I’m currently working on: [Pixel Fighter 2D](https://github.com/Sharior13/pixel-fighter-2d)
 
-- 🌱 I’m currently learning: **Intermediate JavaScript**
+- 🌱 I’m currently learning: **[Intermediate Javascript](https://www.codecademy.com/learn/learn-intermediate-javascript)**
 
 - 👨‍💻 All of my projects are available [here](https://github.com/Sharior13?tab=repositories)
 
@@ -19,7 +19,7 @@
 
 <h3 align="left">Languages and Tools:</h3>
 
-![Languages and Tools](https://skillicons.dev/icons?i=c,cloudflare,css,express,git,html,js,mongodb,mysql,nodejs,npm,ps)
+![Languages and Tools](https://skillicons.dev/icons?i=c,cloudflare,css,express,git,html,js,mongodb,nodejs,npm,ps)
 
 <a href="https://github.com/Sharior13/github-readme-stats">
   <img height=200 align="center" src="https://github-readme-stats-fast.vercel.app/api/streak?username=Sharior13&theme=radical" />
@@ -29,6 +29,7 @@
 </a>
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00B4D8&height=120&section=footer" alt="footer"/>
+
 
 
 
