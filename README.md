@@ -2,7 +2,7 @@
 <h1 align="center">Heyy, I'm Saurav Shrestha ✌️</h1>
 <h3 align="center">Student | Web Developer | Rookie Coder</h3>
 
-- 🔭 I’m currently working on: [Flappy Bird](https://github.com/Sharior13/flappy-bird)
+- 🔭 I’m currently working on: [Hangman](https://github.com/Sharior13/hangman-word-guesser)
 
 - 🌱 I’m currently learning: **[Intermediate Javascript](https://www.codecademy.com/learn/learn-intermediate-javascript)**
 
