@@ -2,11 +2,11 @@
 <h1 align="center">Heyy, I'm Saurav Shrestha ✌️</h1>
 <h3 align="center">Student | Web Developer | Rookie Coder</h3>
 
-- 🔭 I’m currently working on: [Hangman](https://github.com/Sharior13/hangman-word-guesser)
+- 🔭 I’m currently working on: **[Hangman](https://github.com/Sharior13/hangman-word-guesser)**
 
 - 🌱 I’m currently learning: **[Intermediate Javascript](https://www.codecademy.com/learn/learn-intermediate-javascript)**
 
-- 👨‍💻 All of my projects are available [here](https://github.com/Sharior13?tab=repositories)
+- 👨‍💻 All of my projects are available **[here](https://github.com/Sharior13?tab=repositories)**
 
 - 📫 How to reach me: **sauravshrestha648@gmail.com**
 
