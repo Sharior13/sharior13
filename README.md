@@ -2,12 +2,10 @@
 <h1 align="center">Heyy, I'm Saurav Shrestha ✌️</h1>
 <h3 align="center">Student | Web Developer | Rookie Coder</h3>
 
-- 🔭 I’m currently working on: <!-- LAST_REPO_START -->
-<!-- This line will be replaced automatically by the script -->
-<!-- LAST_REPO_END -->
+- 🔭 I’m currently working on: **[Hangman](https://github.com/Sharior13/hangman-word-guesser)**
 
 - 🌱 I’m currently learning: **[Intermediate Javascript](https://www.codecademy.com/learn/learn-intermediate-javascript)**
-
+- 
 - 👨‍💻 All of my projects are available **[here](https://github.com/Sharior13?tab=repositories)**
 
 - 📫 How to reach me: **sauravshrestha648@gmail.com**
@@ -41,9 +39,3 @@
 </p>
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00B4D8&height=120&section=footer" alt="footer"/>
-
-
-
-
-
-
