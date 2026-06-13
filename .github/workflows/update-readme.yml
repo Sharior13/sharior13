@@ -1,0 +1,29 @@
+name: Update Latest Repo
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:     # Allows manual trigger
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Fetch and Update Repo
+        run: |
+          # Fetch the most recently updated public repo (excluding forks)
+          REPO=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://github.com{{ github.repository_owner }}/repos?sort=updated&direction=desc&per_page=10" | \
+            jq -r '.[] | select(.fork == false) | .name | head -n 1')
+          
+          # Replace placeholder tags in README.md
+          sed -i "/<!-- LAST-UPDATED-REPO:START -->/,/<!-- LAST-UPDATED-REPO:END -->/c\<!-- LAST-UPDATED-REPO:START -->\n**[$REPO](https://github.com{{ github.repository_owner }}/$REPO)**\n<!-- LAST-UPDATED-REPO:END -->" README.md
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update profile README with latest updated repo'
