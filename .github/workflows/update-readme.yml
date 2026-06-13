@@ -1,29 +1,53 @@
-name: Update Latest Repo
+name: Update Latest Repository
+
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
-  workflow_dispatch:     # Allows manual trigger
+    - cron: '0 * * * *' # Runs automatically every hour
+  workflow_dispatch:     # Allows manual trigger button
 
 jobs:
-  update-repo:
+  build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write    # Grants explicit write permissions to push to your repository
+
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch and Update Repo
+      - name: Fetch and Update README
         run: |
-          # Fetch the most recently updated public repo (excluding forks)
-          REPO=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://github.com{{ github.repository_owner }}/repos?sort=updated&direction=desc&per_page=10" | \
-            jq -r '.[] | select(.fork == false) | .name | head -n 1')
+          echo "Fetching repositories for Sharior13..."
           
-          # Replace placeholder tags in README.md
-          sed -i "/<!-- LAST-UPDATED-REPO:START -->/,/<!-- LAST-UPDATED-REPO:END -->/c\<!-- LAST-UPDATED-REPO:START -->\n**[$REPO](https://github.com{{ github.repository_owner }}/$REPO)**\n<!-- LAST-UPDATED-REPO:END -->" README.md
+          # Fetch public repos, sort by updated, isolate the first one that isn't a fork or the profile repo
+          RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://github.com")
+          
+          # Use jq to extract the topmost matching repo name, url, and description safely
+          REPO_NAME=$(echo "$RESPONSE" | jq -r '[.[] | select(.fork == false and .name != "Sharior13")][0].name')
+          REPO_URL=$(echo "$RESPONSE" | jq -r '[.[] | select(.fork == false and .name != "Sharior13")][0].html_url')
+          REPO_DESC=$(echo "$RESPONSE" | jq -r '[.[] | select(.fork == false and .name != "Sharior13")][0].description // "No description provided."')
+
+          # If no repository was found or API failed, exit safely without breaking the workflow
+          if [ "$REPO_NAME" = "null" ] || [ -z "$REPO_NAME" ]; then
+            echo "Error: Could not retrieve a valid repository layout from GitHub API."
+            echo "API Response preview:"
+            echo "$RESPONSE" | head -n 10
+            exit 1
+          fi
+
+          echo "Found latest repository: $REPO_NAME"
+          
+          # Format the output markdown line
+          REPO_LINK="**[$REPO_NAME]($REPO_URL)** - *$REPO_DESC*"
+          
+          # Clean fallback to prevent multiline injection syntax breaking sed
+          REPO_LINK=$(echo "$REPO_LINK" | sed 's/[&/]/\\&/g')
+
+          # Rewrite the text blocks precisely between your defined tags
+          sed -i "/<!-- LAST_REPO_START -->/,/<!-- LAST_REPO_END -->/{/<!-- LAST_REPO_START -->/{n;s/.*/$REPO_LINK/;}}" README.md
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'Update profile README with latest updated repo'
+          commit_message: "chore: update last active repository"
