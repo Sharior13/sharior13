@@ -19,9 +19,12 @@
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
+<a href="https://www.blender.org/" target="blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=blender" alt="blender"/></a>
 <a href="https://www.cprogramming.com/" target="blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=c" alt="c"/></a>
+<a href="https://cplusplus.com/" target="blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=cpp" alt="c++"/></a>
 <a href="https://www.cloudflare.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=cloudflare" alt="cloudflare"/></a>
 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=css" alt="css"/></a>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=docker" alt="docker"/></a>
 <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=express" alt="express"/></a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=git" alt="git"/></a>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=html" alt="html"/></a>
@@ -29,6 +32,7 @@
 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb"/></a>
 <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs"/></a>
 <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=npm" alt="npm"/></a>
+<a href="https://www.php.net/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=php" alt="php"/></a>
 <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=ps" alt="ps"/></a>
 </p>
 
