@@ -2,7 +2,7 @@
 <h1 align="center">Heyy, I'm Saurav Shrestha ✌️</h1>
 <h3 align="center">Student | Web Developer | Rookie Coder</h3>
 
-- 🔭 I’m currently working on: **[Pixel Fighter 2D](https://github.com/Sharior13/pixel-fighter-2d)**
+- 🔭 I’m currently working on: **[Luvista Music Player](https://github.com/Sharior13/luvista)**
 
 - 🌱 I’m currently learning: **[Intermediate Javascript](https://www.codecademy.com/learn/learn-intermediate-javascript)**
   
@@ -38,7 +38,7 @@
 
 <p align="left">  
 <a href="https://github.com/Sharior13/">
-  <img height=200 align="center" src="https://github-readme-stats-fast.vercel.app/api/streak?username=Sharior13&theme=radical" /> <img height=200 align="center" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Sharior13&layout=normal&langs_count=8&card_width=320&theme=radical" />
+  <img height=250 align="top" src="https://github-readme-stats-fast.vercel.app/api/streak?username=Sharior13&theme=radical" /> <img height=250 align="center" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Sharior13&layout=normal&langs_count=5&card_width=410&theme=radical" />
 </a>
 </p>
 
