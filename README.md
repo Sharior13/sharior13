@@ -38,7 +38,7 @@
 
 <p align="left">  
 <a href="https://github.com/Sharior13/">
-  <img height=250 align="top" src="https://github-readme-stats-fast.vercel.app/api/streak?username=Sharior13&theme=radical" /> <img height=250 align="center" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Sharior13&layout=normal&langs_count=5&card_width=410&theme=radical" />
+  <img height=250 align="center" src="https://github-readme-stats-fast.vercel.app/api/streak?username=Sharior13&theme=radical" /> <img height=250 align="center" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Sharior13&layout=normal&langs_count=5&card_width=410&theme=radical" />
 </a>
 </p>
 
